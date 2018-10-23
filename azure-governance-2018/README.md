@@ -34,6 +34,12 @@ so that everyone can benefit from the right amount of control and go fast.
 
 ## Intro
 
+"Automate and Codify"
+
+"Creating more subscriptions"
+
+"Hub & spoke"
+
 ### Hello VM bit
 
 1. New VM Wizard
@@ -41,26 +47,27 @@ so that everyone can benefit from the right amount of control and go fast.
 1. Dictionary password + public RDP = pwnd
 1. DS2_v2 vs DS2_v3 diff = NZ$44/mo (in my dev/test subscription)
 
-? Who's platform / product
-
-? Who's more interested in IaaS / PaaS
-
-"codify"
-
--> Creating more Subscriptions
-"Spoke" - Application or Workload
-
 ## Management Groups & Subscription modeling
 
-                    Division
-                        |
+                        Division
+                            |
+            --------------------------
+            |            |           |
         Sandbox Pre-production  Production
+
+### Demo
+
+1. Walkthrough my Management Groups
 
 ### Notes
 
-You can move subscriptions into a new Management Group if you change your mind later on.
+* You can move subscriptions into a new Management Group if you change your mind later on.
+* Up to six levels deep
 
-Up to six levels deep
+### Links
+
+Organize your resources with Azure management groups: <https://docs.microsoft.com/en-nz/azure/governance/management-groups/index>
+
 
 ## Policy
 
@@ -68,39 +75,36 @@ Up to six levels deep
 
     Assign built-in policy definition
     Exceptions
-    Create and assign custom policy definition
+    Custom policy definition
     Compliance
     Remediation
 
 More
 
     Policy in Portal
-    audit, deny, remediate, append
+    simple if/then statement
+    audit, deny, append
+    deploy if not exists, audit if not exists
     By Tag, By SKU, By Region
-    Show simple if/then statement
-    Audit policy
-        Compliance screen
-            Try deploy VM
-            Denied - who deployed policy - request an exception?
-        
-
-Can automate remediation.
-
-Policy view to show how many resources are not compliant.
-
-[ ] VM guest policies
-[ ] DSC v2?
-* Demo Remediation
 
 ### Notes
 
-2 policy engines: deployment and compliance
+* VM guest policies
+* 2 policy engines: deployment and compliance
+* See the [Azure Governance deep dive] for detailed information
+* Azure policy repo: <https://github.com/azure/azure-policy>
 
-See the deepdive for detailed information
+### Azure Policy links
 
-<https://github.com/azure/azure-policy>
+Github repo including samples: <https://github.com/azure/azure-policy>
 
-In-guest policy
+#### VM Guest Policy links
+
+Understand Azure Policy's Guest Configuration: <https://docs.microsoft.com/en-us/azure/governance/policy/concepts/guest-configuration>
+
+Guest config uses DSC v2 on Windows and Chef Inspec on Linux: <https://www.chef.io/inspec/>
+
+Chef InSpec now available in Azure Cloud Shell: <https://blog.chef.io/2018/05/23/inspec-now-available-in-azure-cloud-shell/>
 
 ## Azure Blueprints
 
@@ -120,7 +124,6 @@ Tying it all together is Azure Blueprints. An amazing new feature set that was p
 
 1. Create a global Blueprint
     1. Environment tag
-    1. Monitor missing system updates in Azure Security Center
     1. Assign SysOps group as Contributor
     1. Create Shared Infrastructure RG with KV (Key Vault) and auto (Automation account)
 1. Create a Prod Blueprint
@@ -128,6 +131,7 @@ Tying it all together is Azure Blueprints. An amazing new feature set that was p
     1. RG: app-prod-rg
         1. Apply `project-code` tag with default value to resources and RGs
         1. Add App Team as contributor
+1. Demo RBAC for daniel@larsen
 
 ### Links
 
@@ -136,6 +140,10 @@ Define and Assign an Azure Blueprint in the portal: <https://docs.microsoft.com/
 Understand the life-cycle of an Azure Blueprint: <https://docs.microsoft.com/en-us/azure/governance/blueprints/concepts/lifecycle>
 
 Understand the deployment sequence in Azure Blueprints: <https://docs.microsoft.com/en-us/azure/governance/blueprints/concepts/sequencing-order>
+
+Alex Frankel's ARM templates that he uses for testing Blueprints: <https://github.com/ajf214/personal-arm-templates>
+
+<https://www.powershellgallery.com/packages/Manage-AzureRMBlueprint/1.0>
 
 ## Resource Graph
 
@@ -191,8 +199,13 @@ az graph query -q "where type =~ 'Microsoft.Compute/virtualMachines' | top 1 by 
 az graph query -q "summarize count() by subscriptionId"
 az graph query -q "summarize count()"
 ```
+### Links
+
+Sample queries: <https://docs.microsoft.com/en-nz/azure/governance/resource-graph/samples/starter>
 
 ## Maturity model
+
+> WIP
 
 Automation
 Management Group
@@ -224,8 +237,6 @@ Hub and Spoke
 
 ## More links
 
-Organize your resources with Azure management groups: <https://docs.microsoft.com/en-nz/azure/governance/management-groups/index>
-
 <https://docs.microsoft.com/en-us/azure/governance/>
 
 <https://myignite.techcommunity.microsoft.com/sessions/64711?source=sessions>
@@ -236,10 +247,6 @@ Organize your resources with Azure management groups: <https://docs.microsoft.co
 
 <https://www.youtube.com/watch?v=OiOXlgFNgDo>
 
-Alex Frankel's ARM templates that he uses for testing Blueprints: <https://github.com/ajf214/personal-arm-templates>
-
-<https://www.powershellgallery.com/packages/Manage-AzureRMBlueprint/1.0>
-
 <https://azure.microsoft.com/en-us/resources/videos/ignite-2018-building-a-scalable-solution-to-millions-of-users-lessons-learned-from-the-microsoft-azure-portal-team/>
 
 <https://azure.microsoft.com/en-us/resources/videos/ignite-2018-azure-it-controls-for-automation-and-configurations-of-your-azure-and-on-prem-environment/>
@@ -249,26 +256,6 @@ Alex Frankel's ARM templates that he uses for testing Blueprints: <https://githu
 <https://azure.microsoft.com/en-us/resources/videos/ignite-2018-implementing-devops-secure-and-compliant-by-default/>
 
 <https://azure.microsoft.com/en-us/resources/videos/ignite-2018-cloud-governance-at-microsoft-through-azure-policy-management-groups-and-the-azure-secure-devops-kit/>
-
-### Resource Graph
-
-Sample queries: <https://docs.microsoft.com/en-nz/azure/governance/resource-graph/samples/starter>
-
-### Azure Policy
-
-Github repo including samples: <https://github.com/azure/azure-policy>
-
-### VM Guest Policy
-
-Understand Azure Policy's Guest Configuration: <https://docs.microsoft.com/en-us/azure/governance/policy/concepts/guest-configuration>
-
-Guest config uses DSC v2 on Windows and Chef Inspec on Linux: <https://www.chef.io/inspec/>
-
-Chef InSpec now available in Azure Cloud Shell: <https://blog.chef.io/2018/05/23/inspec-now-available-in-azure-cloud-shell/>
-
-
-
-
 
 
 [Azure Governance deep dive]:https://myignite.techcommunity.microsoft.com/sessions/65631
