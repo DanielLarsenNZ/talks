@@ -1,0 +1,60 @@
+﻿{
+  "$schema": "http://schemas.microsoft.org/azure/deploymentTemplate?api-version=2015-01-01-preview#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "accountName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the Azure Automation account to deploy to."
+      }
+    },
+    "keyvaultName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Vault"
+      }
+    }
+  },
+  "variables": {
+    "sku": "Free"
+  },
+  "resources": [
+    {
+      "name": "[parameters('accountName')]",
+      "type": "Microsoft.Automation/automationAccounts",
+      "apiVersion": "2015-10-31",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [],
+      "tags": {
+        "displayName": "Automation Account"
+      },
+      "properties": {
+        "sku": {
+          "name": "[variables('sku')]"
+        }
+      }
+    },
+    {
+      "type": "Microsoft.KeyVault/vaults",
+      "name": "[parameters('keyVaultName')]",
+      "apiVersion": "2015-06-01",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "enabledForDeployment": true,
+        "enabledForDiskEncryption": true,
+        "enabledForTemplateDeployment": true,
+        "tenantId": "[subscription().tenantId]",
+        "accessPolicies": [
+        ],
+        "sku": {
+          "name": "Standard",
+          "family": "A"
+        }
+      },
+      "tags": {
+        "displayName": "KeyVault"
+      }
+    }
+  ],
+  "outputs": {}
+}
