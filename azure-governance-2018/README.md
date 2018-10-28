@@ -1,6 +1,6 @@
 # Operating Azure at scale
 
-<https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/events/253772141/>
+![Daniel Larsen speaking at Auckland Azure Lunchtime meetup](./twitter_msimpsonnz_hellovm_960.jpg)
 
 It’s really easy to get started quickly and go fast with Azure. But what happens when the business
 starts asking for compliance, security and cost control? In the past this has meant slowing down and
@@ -13,6 +13,14 @@ Governance features in the Azure Portal and CLI (Command line interface), and ho
 pragmatic and sensible policies and controls that keep the business happy without slowing developers
 down. These great new features have drawn from field experience with some of Azure’s largest customers,
 so that everyone can benefit from the right amount of control and go fast.
+
+> Slides: [Azure-Governance-2018 (4).pdf](./Azure-Governance-2018%20(4).pdf)
+
+> Video: <https://www.blubrry.com/azure_lunch/38894513/meetup-azure-governance-operating-azure-at-scale/>
+
+> Azure Governance, a developer's journey - Podcast: <https://www.blubrry.com/azure_lunch/> (coming soon) 
+
+> Meetup page: <https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/events/253772141/>
 
 ## Runsheet
 
@@ -55,16 +63,16 @@ so that everyone can benefit from the right amount of control and go fast.
             |            |           |
         Sandbox Pre-production  Production
 
-### Demo
+### Management Group Demo
 
 1. Walkthrough my Management Groups
 
-### Notes
+### Management Group Notes
 
 * You can move subscriptions into a new Management Group if you change your mind later on.
 * Up to six levels deep
 
-### Links
+### Management Group Links
 
 Organize your resources with Azure management groups: <https://docs.microsoft.com/en-nz/azure/governance/management-groups/index>
 
@@ -239,7 +247,11 @@ Hub and Spoke
 
 <https://docs.microsoft.com/en-us/azure/governance/>
 
-<https://myignite.techcommunity.microsoft.com/sessions/64711?source=sessions>
+BRK3062 - Architecting Security and Governance Across your Azure Subscriptions: <https://myignite.techcommunity.microsoft.com/sessions/64711?source=sessions>
+
+BRK3085 - Deep dive into Implementing governance at scale through Azure Policy: <https://myignite.techcommunity.microsoft.com/sessions/65631>
+
+Azure Virtual Datacenter and the Enterprise Control Plane: <https://docs.microsoft.com/en-us/azure/architecture/vdc/>
 
 <https://www.youtube.com/watch?v=3Di9H1V0zuc> 
 
