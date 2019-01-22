@@ -54,14 +54,15 @@ towards service oriented architecture and micro-services.
         Performance engineering
         Selenium
         Fiddler
+        Postman
     
     The baseline
         KPIs for performance
         What is important to the business?
         Cost
         Density
-        Performance drives density drives cost drives growth drives investment drives features and
-            the cycle continues
+        Performance drives density drives cost drives growth drives investment and the cycle
+            continues
 
     Low hanging fruit
         Where is the bottleneck?
@@ -132,6 +133,9 @@ towards service oriented architecture and micro-services.
         Large messages
         Readonly Session State
 
+## Timings
+
+15' to Load Test demo!
 
 
     
@@ -162,6 +166,20 @@ Azure DevOps Load Tests: <https://docs.microsoft.com/en-us/azure/devops/test/loa
 
 Output cache: <https://support.microsoft.com/en-us/help/308375/how-to-control-page-output-caching-in-asp-net-by-using-visual-c-net>
 
+### Load Tests
+
+<https://blogs.msdn.microsoft.com/devops/2016/05/20/feature-preview-creating-load-tests-using-http-archive/>
+
 ### Azure Front Door
 
+<https://azure.com/frontdoor>
+
 How Front Door matches requests to a routing rule: <https://docs.microsoft.com/en-us/azure/frontdoor/front-door-route-matching>
+
+### Elastic Database Tools
+
+Scaling out with Azure SQL Database: <https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-scale-introduction>
+
+Get started with Elastic Database Tools: <https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-scale-get-started>
+
+Elastic Database client library with Entity Framework: <https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-scale-use-entity-framework-applications-visual-studio>
