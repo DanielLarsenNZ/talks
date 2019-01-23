@@ -14,6 +14,8 @@ storage". With the right combination of patterns and practices it is possible to
 out of old code, to scale to the next order of magnitude and to save the business money as we drive 
 towards service oriented architecture and micro-services.
 
+> The source code for this talk is here: <https://github.com/DanielLarsenNZ/eShopModernizing>
+
 ## Part one of a Trilogy
 
 ### 1. Scaling the monolith
@@ -133,15 +135,6 @@ towards service oriented architecture and micro-services.
         Large messages
         Readonly Session State
 
-## Timings
-
-15' to Load Test demo!
-
-
-    
-
-    
-
 ## Load testing
 
 _"Whenever I do refactoring, the first step is always the same. I need
@@ -156,11 +149,9 @@ to ensure I have a solid set of tests for that section of code."_ - Martin Fowle
 eShopModernizing - Modernizing ASP.NET Web apps (MVC and WebForms) and N-Tier apps (WCF + WinForms)
 with Windows Containers and Azure <https://github.com/dotnet-architecture/eShopModernizing>
 
-[Refactoring 2018]:https://learning.oreilly.com/library/view/refactoring-improving-the/9780134757681/ch01.xhtml#ch01lev1sec3
+Fixed performance of Min/Max in SortedSet: <https://github.com/dotnet/corefx/pull/11968/files>
 
-<https://github.com/dotnet/corefx/pull/11968/files>
-
-<https://dotnet.microsoft.com/learn/web/modernizing-server-apps>
+Migrate your .NET app to Azure: <https://dotnet.microsoft.com/learn/web/modernizing-server-apps>
 
 Azure DevOps Load Tests: <https://docs.microsoft.com/en-us/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts#view-the-results-of-the-load-test>
 
@@ -183,3 +174,6 @@ Scaling out with Azure SQL Database: <https://docs.microsoft.com/en-us/azure/sql
 Get started with Elastic Database Tools: <https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-scale-get-started>
 
 Elastic Database client library with Entity Framework: <https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-scale-use-entity-framework-applications-visual-studio>
+
+
+[Refactoring 2018]:https://learning.oreilly.com/library/view/refactoring-improving-the/9780134757681/ch01.xhtml#ch01lev1sec3
