@@ -14,6 +14,8 @@ storage". With the right combination of patterns and practices it is possible to
 out of old code, to scale to the next order of magnitude and to save the business money as we drive 
 towards service oriented architecture and micro-services.
 
+> Watch a video of this talk here: <https://azurelunchnz.azureedge.net/podcasts/scaling-mono.mp4>
+
 > The source code for this talk is here: <https://github.com/DanielLarsenNZ/eShopModernizing>
 
 ## Part one of a Trilogy
