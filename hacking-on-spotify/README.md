@@ -42,7 +42,7 @@ Invoke from PowerShell:
 
 ```powershell
 # alias the script to the word `spotify`
-alias spotify .\spotify.ps1
+Set-Alias -Name spotify -Value .\spotify.ps1
 
 # set the SPOTIFY_BEARER_TOKEN environment variable. 
 #  In this simple implementation this needs to be done once per session / hour
