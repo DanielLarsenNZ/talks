@@ -15,7 +15,7 @@ try {
 
     # get the Spotify URI for the first artist search result
     if ($null -eq $response.artists.items[0]) {
-        Write-Host "Could not find any Artist named ""$artist"" 🤔"
+        Write-Host "Could not find any Artist named ""$artist"" :/"
     }
     else {
         $spotifyArtistUri = $response.artists.items[0].uri

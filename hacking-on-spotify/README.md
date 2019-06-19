@@ -21,13 +21,18 @@ passionate about music. It's a good domain to work in for demos and samples.
 
 <https://developer.spotify.com/>
 
-<https://developer.spotify.com/documentation/web-api/>
-
 <https://developer.spotify.com/documentation/web-api/reference/search/search/>
 
 <https://developer.spotify.com/console/get-search-item/?q=radiohead&type=artist&market=&limit=&offset=>
 
-<https://developer.spotify.com/console/put-play/>
+https://developer.spotify.com/documentation/web-api/reference/player/start-a-users-playback/
+
+Notes to hit:
+
+* API - Application Programmable Interface
+* Definition of Hacking
+* SDK: Software Development Kit
+* Who's your favourite artist?
 
 ## Putting it all together in a script
 
