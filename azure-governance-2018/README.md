@@ -16,9 +16,9 @@ so that everyone can benefit from the right amount of control and go fast.
 
 > Slides: [Azure-Governance-2018 (4).pdf](./Azure-Governance-2018%20(4).pdf)
 
-> Video: <https://www.blubrry.com/azure_lunch/38894513/meetup-azure-governance-operating-azure-at-scale/>
+> Video: <https://azurelunchnz.azureedge.net/podcasts/meetup20181024.mp4>
 
-> Azure Governance, a developer's journey - Podcast: <https://www.blubrry.com/azure_lunch/> (coming soon) 
+> Azure Governance, a developer's journey - Podcast: <https://github.com/DanielLarsenNZ/azure-lunch/blob/master/podcasts/s1e04.md> 
 
 > Meetup page: <https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/events/253772141/>
 
