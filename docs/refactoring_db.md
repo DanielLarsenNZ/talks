@@ -29,7 +29,7 @@ Roadmaps are useful for visualising projects, aligning teams and managing up.
     ◆ CODE  ◆ DB   ↗
       READY   READY
 
-* See below for Code Ready and DB Ready roadmaps
+* See below for Code Ready and DB Ready roadmaps.
 * Once code and DB changes have been made and tooling is in place, and the new multi-tenancy DB is in
   Production, a pilot group of tenants are migrated to "canary" the system. 
 * When the system is stable it is ready for new tenants (customers). From this date all new tenants
@@ -84,6 +84,7 @@ The Database is ready for multi-tenancy when:
 1. The DB schema can be upgraded/migrated automatically via a CI/CD pipeline
 1. A query to any Table (that represents a root entity) includes a tenant id and only returns data for
    that tenant.
+1. Processes and Tooling are in place to onboard and move tenants.
 
 ### Code ready example
 
