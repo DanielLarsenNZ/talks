@@ -6,7 +6,7 @@ We will define recovery once and for all. What is a "disaster" in 2020? And how 
 
 This will be a fast-paced, fast-talking, fast-moving talk. So please drop your question in the chat and don't worry - all assets including slides, video and examples will be available after this talk (in this repo).
 
-> 🎞 **Slides**: [Service_Bus_HA_2020.pdf](./servicebus-ha/Service_Bus_HA_2020.pdf) 
+> 🎞 **Slides**: [Service_Bus_HA_2020.pdf](./Service_Bus_HA_2020.pdf) 
 
 ## Outline
 
@@ -70,7 +70,8 @@ This will be a fast-paced, fast-talking, fast-moving talk. So please drop your q
         Well Architected
         Azure Learn
 
-## Slides
+## Links
 
 <https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services>
+
 <https://github.com/DanielLarsenNZ/talks/blob/master/azure-functions-integration-patterns/Azure%20Functions%20-%20Integration%20Patterns%20-%202020.pdf>
