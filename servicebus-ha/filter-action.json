@@ -1,0 +1,13 @@
+{
+    "properties": {
+        "filterType": "CorrelationFilter",
+        "correlationFilter": {
+            "properties": {
+                "replicated": null
+            }
+        },
+        "action": {
+            "sqlExpression": "SET replicated = true; SET source = 'aue';"
+        }
+    }
+}
