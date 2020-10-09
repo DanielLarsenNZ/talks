@@ -8,6 +8,9 @@ This will be a fast-paced, fast-talking, fast-moving talk. So please drop your q
 
 > 🎞 **Slides**: [Service_Bus_HA_2020.pdf](./Service_Bus_HA_2020.pdf) 
 
+> 📺 **Video**: [ACSUG September 2020 - Azure Service Bus, High Availability and Disaster Recovery](https://www.youtube.com/watch?v=ESkRl2atoXc) (YouTube)
+
+
 ## Outline
 
     00:00   Welcome, Introduction, Pop quiz
