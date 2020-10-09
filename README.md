@@ -1,5 +1,7 @@
 # DanielLarsenNZ / Talks
 
+> #BlackLivesMatter ✊🏾✊🏿✊🏽
+
 @DanielLarsenNZ 's public talks and assets.
 
 * Azure Functions Integration Patterns (Global Integration Bootcamp 2020) [/azure-functions-integration-patterns](/azure-functions-integration-patterns)
