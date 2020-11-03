@@ -4,6 +4,8 @@ _Pro-tips for software engineers and architects_
 
 The Cloud presents the perfect environment for hosting line-of-business and custom applications. Many organizations are migrating apps to Azure to reduce costs and management overhead as well as improve performance, availability and security. So, where do we start with app migration and modernization? Azure Engineer Daniel Larsen will walk through key considerations, typical migration plans, and how to refactor applications to take advantage of the benefits of cloud hosting.
 
+> 🎞 [Download slides](./App-mod-2020.pdf)
+
 ## Outline
 
 ```

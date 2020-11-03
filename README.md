@@ -1,9 +1,9 @@
 # DanielLarsenNZ / Talks
 
-> #BlackLivesMatter ✊🏾✊🏿✊🏽
-
 @DanielLarsenNZ 's public talks and assets.
 
+* Tech Hui 2020: Well-Architected Framework - Reliability n the Cloud [well-architected-reliability](./well-architected-reliability)
+* Tech Hui 2020: Application Modernization in Azure [app-mod-2020](./app-mod-2020)
 * Service Bus HA (Auckland Connected Systems User Group) [servicebus-ha](./servicebus-ha)
 * Azure Functions Integration Patterns (Global Integration Bootcamp 2020) [azure-functions-integration-patterns](/azure-functions-integration-patterns)
 * Scaling the monolith (2019): [scaling-the-monolith-2019](/scaling-the-monolith-2019)

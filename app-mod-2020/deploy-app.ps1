@@ -7,18 +7,22 @@ $sqlAdminPassword = "$([System.Guid]::NewGuid().ToString('N'))!"
 $insights = 'appmod-insights'
 $plan = "appmod-$loc-plan"
 
+
 # RESOURCE GROUP
 az group create -n $rg --location $location --tags $tags
 
+
 # SQL DB
-az sql server create -n $sql -g $rg --location $location --tags $tags --admin-user $sqlAdmin --admin-password $sqlAdminPassword
+az sql server create -n $sql -g $rg --location $location --admin-user $sqlAdmin --admin-password $sqlAdminPassword
 az sql server firewall-rule create -g $rg -s $sql -n 'ALL_AZURE' --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
+az sql server update --admin-password $sqlAdminPassword -n $sql -g $rg
 az sql db create -g $rg --server $sql -n $sqlDb --tags $tags --edition 'Basic' --service-objective 'Basic'
 $sqlConn = az sql db show-connection-string -s $sql -n $sqlDb -c ado.net
 $sqlConn = $sqlConn -replace '<username>', $sqlAdmin
 $sqlConn = $sqlConn -replace '<password>', $sqlAdminPassword
 $sqlConn = $sqlConn -replace '"', ''
 $sqlConn
+
 
 # APPLICATION INSIGHTS
 $instrumentationKey = ( az monitor app-insights component create --app $insights --location $location `
@@ -42,8 +46,7 @@ az webapp deployment source config -n $app -g $rg --branch 'master' `
     --repo-url 'https://github.com/DanielLarsenNZ/eShopModernizing'
 
 
-# Open the apps in the browser
-start "https://$app.azurewebsites.net"
+start "https://$app.azur    ewebsites.net"
 
 
 # Tear down
