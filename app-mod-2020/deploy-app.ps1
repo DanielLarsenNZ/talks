@@ -46,7 +46,7 @@ az webapp deployment source config -n $app -g $rg --branch 'master' `
     --repo-url 'https://github.com/DanielLarsenNZ/eShopModernizing'
 
 
-start "https://$app.azur    ewebsites.net"
+start "https://$app.azurewebsites.net"
 
 
 # Tear down
