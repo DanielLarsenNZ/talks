@@ -2,6 +2,8 @@
 
 @DanielLarsenNZ 's public talks and assets.
 
+* New Zealand Reactor Popup 2022: Azure is coming - Architecting for NZ North Azure Region [nz-north](./nz-north)
+
 * Tech Hui 2020: Well-Architected Framework - Reliability n the Cloud [well-architected-reliability](./well-architected-reliability)
 * Tech Hui 2020: Application Modernization in Azure [app-mod-2020](./app-mod-2020)
 * Service Bus HA (Auckland Connected Systems User Group) [servicebus-ha](./servicebus-ha)
