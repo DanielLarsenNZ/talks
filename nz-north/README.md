@@ -10,4 +10,4 @@ The largest ever datacentre project in New Zealand is due to be completed in 202
 
 ## Links
 
-Slides: [NZ_North_2022.pdf](NZ_North_2022.pdf)
+Slides: [NZ_North_2022.pdf](https://github.com/DanielLarsenNZ/talks/raw/main/nz-north/NZ_North_2022.pdf)
